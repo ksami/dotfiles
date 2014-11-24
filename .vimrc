@@ -34,7 +34,7 @@ set mouse=a
 " Enable syntax highlighting
 syntax on
 
-colorscheme desert
+colorscheme molokai
 set background=dark
 
 
