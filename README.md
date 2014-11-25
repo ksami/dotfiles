@@ -1,12 +1,15 @@
 .dotfiles
 =========
-#Explanation  
--.vim and .vimrc for vim  
--.zshrc.orig for pure zsh  
--.zshrc for oh-my-zsh  
+###Files
+- .vim/colors for vim colorschemes
+- .vimrc for vim  
+- .zshrc.orig for the zsh shell  
+- .zshrc for oh-my-zsh  
   
-#Instructions  
+###Instructions  
 1. Clone repo into home directory  
-2. symlink all the files using ln -s  
+`git clone https://github.com/ksami/dotfiles`
+2. symlink desired files to home directory  
+`ln -s /path/to/file/ ~`
 3. ???  
 4. Profit
