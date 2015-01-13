@@ -19,7 +19,7 @@ fi
 VBoxClient-all
 
 # Gets settings for urxvt from ~/.Xresources
-xrdb -merge /home/ksami/.Xresources
+[[ -f /home/ksami/.Xresources ]] && xrdb -merge /home/ksami/.Xresources
 
 # ...or the Window Manager of your choice
 exec i3
