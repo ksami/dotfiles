@@ -40,5 +40,5 @@ URxvt*colorUL: #9695b5
 URxvt*internalBorder:18
 URxvt*borderColor: #1a1717
 
-URxvt.font: xft:bitstream vera sans mono:size=12:antialiasing=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialiasing=true
+URxvt.font: xft:dejavu sans mono:size=12:antialiasing=true
+URxvt.boldFont: xft:dejavu vera sans mono:bold:size=12:antialiasing=true
