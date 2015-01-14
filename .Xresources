@@ -41,4 +41,4 @@ URxvt*internalBorder:18
 URxvt*borderColor: #1a1717
 
 URxvt.font: xft:dejavu sans mono:size=12:antialiasing=true
-URxvt.boldFont: xft:dejavu vera sans mono:bold:size=12:antialiasing=true
+URxvt.boldFont: xft:dejavu sans mono:bold:size=12:antialiasing=true
