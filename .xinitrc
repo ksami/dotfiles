@@ -18,6 +18,9 @@ fi
 # VBox guest additions
 VBoxClient-all
 
+# Set background
+/home/ksami/.fehbg
+
 # Gets settings for urxvt from ~/.Xresources
 [[ -f /home/ksami/.Xresources ]] && xrdb -merge /home/ksami/.Xresources
 
