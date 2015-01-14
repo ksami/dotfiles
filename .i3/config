@@ -27,7 +27,7 @@ font pango:DejaVu Sans Mono 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -152,8 +152,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# New workspaces started with tabbed layout
-workspace_layout tabbed
+# New workspaces started with tiled layout
+workspace_layout stacking
 
 # Disable focus follows mouse
 focus_follows_mouse false
