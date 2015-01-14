@@ -37,7 +37,7 @@ URxvt*foreground: #969899
 URxvt*cursorUnderline: false
 URxvt*cursorColor: #969899
 URxvt*colorUL: #9695b5
-URxvt*internalBorder:7
+URxvt*internalBorder:18
 URxvt*borderColor: #1a1717
 
 URxvt.font: xft:bitstream vera sans mono:size=12:antialiasing=true
