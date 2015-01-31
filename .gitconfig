@@ -6,7 +6,10 @@
 [alias]
     st = status
     cm = commit -m
+    c = commit -m
     df = diff
     lg = log --graph
     ad = add .
+    a = add .
     sh = show
+    ph = push
