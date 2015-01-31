@@ -13,7 +13,7 @@ or just copy the files to home directory if you don't want to keep it linked to 
 Rename .zshrc.orig to .zshrc if you are not using oh-my-zsh  
 `mv .zshrc.orig .zshrc`  
   
-For example, to use the vim config file and colorschemes:
+For example, to use the vim config file and colorschemes/plugins:
 ```
 cd ~
 git clone https://github.com/ksami/dotfiles
