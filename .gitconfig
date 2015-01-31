@@ -1,0 +1,12 @@
+[user]
+	email = ksami.ihide@gmail.com
+	name = ksami
+[push]
+	default = simple
+[alias]
+    st = status
+    cm = commit -m
+    df = diff
+    lg = log --graph
+    ad = add .
+    sh = show
