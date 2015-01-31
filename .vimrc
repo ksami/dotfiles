@@ -20,7 +20,7 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-" Makes search act like search in modern browsers
+" Start searching while typing
 set incsearch
 
 " For regular expressions turn magic on
