@@ -1,11 +1,6 @@
 .dotfiles
 =========
-###Files
-- .vim/colors for vim colorschemes
-- .vimrc for vim  
-- .zshrc.orig for the zsh shell  
-- .zshrc for oh-my-zsh  
-  
+
 ###Instructions  
 Clone repo  
 `git clone https://github.com/ksami/dotfiles`  
@@ -25,7 +20,3 @@ git clone https://github.com/ksami/dotfiles
 ln -s dotfiles/.vimrc ~/.vimrc
 ln -s dotfiles/.vim ~/.vim
 ```
-  
-#####Todo
-- [ ] Screenshots
-- [ ] How to get oh-my-zsh
