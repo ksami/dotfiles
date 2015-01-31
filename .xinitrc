@@ -25,8 +25,8 @@ VBoxClient-all
 [[ -f /home/ksami/.Xresources ]] && xrdb -merge /home/ksami/.Xresources
 
 # ...or the Window Manager of your choice
-#exec i3
+exec i3
 
 # i3 with gaps patch
 # github.com/DSMan195276/i3 (dsm-changes)
-exec /home/ksami/i3/i3
+#exec /home/ksami/i3/i3
