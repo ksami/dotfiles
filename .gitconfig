@@ -12,4 +12,4 @@
     ad = add .
     a = add .
     sh = show
-    ph = push
+    ps = push
