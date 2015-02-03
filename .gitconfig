@@ -13,3 +13,4 @@
     a = add .
     sh = show
     ps = push
+    pl = pull
