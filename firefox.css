@@ -1,4 +1,4 @@
-/* AGENT_SHEET */
+/*null*//* AGENT_SHEET */
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 @namespace html url("http://www.w3.org/1999/xhtml");
 
@@ -156,11 +156,12 @@
     font-size: 12px !important;
     color: #c8cacc !important;
     border: none !important;
-    padding: 0 0 0 11px !important;
+    padding: 0 0 0 0px !important;
 }
 
 .tabbrowser-tab[selected=true] {
     font-weight: bold !important;
+    border-radius: 0 !important;
 }
 
 .tab-background-start, .tab-background-end, .tab-icon {
