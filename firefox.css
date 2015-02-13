@@ -42,7 +42,9 @@
     padding: 0 !important;
     border: none !important;
     background: transparent !important;
-    color: #c8cacc !important;
+    color: #ffffff !important;
+    font-family: sans-serif !important;
+    font-size: 12px !important;
 }
 
 #back-button, #forward-button {
@@ -154,7 +156,7 @@
     background: transparent !important;
     font-family: sans-serif !important;
     font-size: 12px !important;
-    color: #c8cacc !important;
+    color: #ffffff !important;
     border: none !important;
     padding: 0 0 0 0px !important;
 }
