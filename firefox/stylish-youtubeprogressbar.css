@@ -1,0 +1,37 @@
+@-moz-document domain("youtube.com") {
+.html5-play-progress, .ytp-play-progress {
+   background: #1956B3 !important; /* Old browsers */
+   background: -moz-linear-gradient(left, #1b1b1b 0%, #1956B3 100%) !important;
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#1956B3)) !important;
+   background: -webkit-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: -o-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: -ms-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: linear-gradient(to right, #1b1b1b 0%,#1956B3 100%) !important;
+}
+/*.html5-load-progress, .ytp-load-progress {
+   background: #404040 !important;
+}*/
+/* actual scrubber button */
+.html5-scrubber-button, .ytp-scrubber-button {
+   background: #383A3B !important;
+   border-color: #1B1B1B !important;
+   box-shadow: 0px 0px 3px #1956B3, 0px 0px 5px #1956B3, 0px 0px 0px #1956B3 !important;
+   transition: box-shadow 0.2s, background 0.2s !important;
+}
+/* scrubber button on hover */
+.html5-scrubber-button:hover, .ytp-scrubber-button:hover {
+   background: #1956B3 !important;
+   border-color: #1B1B1B !important;
+   box-shadow: 0px 0px 6px #1956B3, 0px 0px 8px #1956B3, 0px 0px 10px #1956B3 !important;
+}
+/* volume control */
+.ytp-volume-slider-foreground:before {
+   background: #1956B3 !important; /* Old browsers */
+   background: -moz-linear-gradient(left, #1b1b1b 0%, #1956B3 100%) !important;
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#1956B3)) !important;
+   background: -webkit-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: -o-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: -ms-linear-gradient(left, #1b1b1b 0%,#1956B3 100%) !important;
+   background: linear-gradient(to right, #1b1b1b 0%,#1956B3 100%) !important;
+}
+}
