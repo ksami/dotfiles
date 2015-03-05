@@ -78,6 +78,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pl="sudo"
 alias pls="sudo"
 alias cd.="cd .."
 alias cd..="cd .."
