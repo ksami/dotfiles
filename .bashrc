@@ -6,14 +6,12 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-alias -='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
-alias cd/='cd /'
 alias grep="grep --color=auto"
 alias history='fc -l 1'
 alias l='ls -lah'
