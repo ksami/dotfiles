@@ -8,7 +8,7 @@
     cm = commit -m
     c = commit -m
     df = diff
-    lg = log --graph
+    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
     ad = add .
     a = add .
     sh = show
