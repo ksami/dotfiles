@@ -1,0 +1,6 @@
+"3.9 (created: 2015/02/15 15:49:05)
+
+" don't focus any "input" elements automatically when open pages.
+set focuscontent
+
+" vim: set ft=vimperator:
