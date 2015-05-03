@@ -1,5 +1,9 @@
 "3.9 (created: 2015/02/15 15:49:05)
 
+source! "C:\\cygwin64\\home\\Ken\\_vimperatorrc.local"
+
+colorscheme indigo-fx3
+
 " don't focus any "input" elements automatically when open pages.
 set focuscontent
 
