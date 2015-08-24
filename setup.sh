@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Requires:
+# Git
+# Zsh
+# Vim
+
 # List of files/dirs to symlink
 SYMLINK_LIST="
 .vim
