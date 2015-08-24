@@ -25,6 +25,9 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
+" Filesystem explorer
+"Plugin 'scrooloose/nerdtree'
+
 
 " Surround with quotes/parenthesis/html tags
 Plugin 'tpope/vim-surround'
@@ -34,9 +37,6 @@ Plugin 'Raimondi/delimitMate'
 
 " Syntax checking
 Plugin 'scrooloose/syntastic'
-
-" Filesystem explorer
-Plugin 'scrooloose/nerdtree'
 
 " Status line
 Plugin 'bling/vim-airline'
