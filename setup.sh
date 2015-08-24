@@ -48,7 +48,6 @@ if grep -q "zsh" /etc/shells; then
     else
         echo "Already using zsh!"
     fi
-    unset TEST_CURRENT_SHELL
 else
     echo "zsh not found, please install zsh then change shell"
 fi
@@ -57,7 +56,7 @@ fi
 
 # Install Vundle
 if command -v vim &>/dev/null; then
-    if [ ! -e "~/.vim/bundle/Vundle.vim" ]; then
+    if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
         echo "Installing Vundle"
         git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         vim +PluginInstall +qall
