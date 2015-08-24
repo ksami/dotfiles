@@ -42,8 +42,7 @@ done
 
 # Set shell to zsh
 if grep -q "zsh" /etc/shells; then
-    TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
-    if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
+    if ! echo $SHELL | grep -q "zsh"; then
         echo "Changing default shell to zsh"
         chsh -s $(grep /zsh$ /etc/shells | tail -1)
     else
