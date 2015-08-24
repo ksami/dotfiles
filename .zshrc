@@ -78,8 +78,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pl="sudo"
-alias pls="sudo $(fc -ln -1)"
-alias please="sudo $(fc -ln -1)"
-alias cd.="cd .."
-alias cd..="cd .."
+
+# User specific aliases and functions
+alias rm='rm -i'
+alias pls='sudo $(fc -ln -1)'
+alias please='sudo $(fc -ln -1)'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cd.='cd ..'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias grep="grep --color=auto"
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls --color=tty'
+alias lsa='ls -lah'
+alias which-command=whence
+alias du='du -h'
+alias df='df -h'
+
