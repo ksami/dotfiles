@@ -16,7 +16,7 @@ SYMLINK_LIST="
 
 
 # Check for git
-if ! command -v git; then
+if ! command -v git &>/dev/null; then
     echo "git not found, please install git and try again"
     echo "Exiting..."
     exit 1
@@ -42,11 +42,11 @@ done
 
 
 # Set shell to zsh
-if cat /etc/shells | grep "zsh"; then
+if cat /etc/shells | grep -q "zsh"; then
     PATH_TO_ZSH=$(which zsh)
     if [ $SHELL != $PATH_TO_ZSH ]; then
         echo "Changing shell to zsh"
-        sudo chsh -s $PATH_TO_ZSH
+        chsh -s $PATH_TO_ZSH
     else
         echo "Already using zsh!"
     fi
@@ -57,7 +57,7 @@ fi
 
 
 # Install Vundle
-if command -v vim; then
+if command -v vim &>/dev/null; then
     echo "Installing Vundle"
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
@@ -104,6 +104,3 @@ echo "\n\n \033[0;32mp.s. Follow us at http://twitter.com/ohmyzsh.\033[0m"
 echo "\n\n \033[0;32mp.p.s. Get stickers and t-shirts at http://shop.planetargon.com.\033[0m"
 env zsh
 . ~/.zshrc
-
-
-echo "Done"
