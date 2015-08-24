@@ -79,6 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pl="sudo"
-alias pls="sudo"
+alias pls="sudo $(fc -ln -1)"
+alias please="sudo $(fc -ln -1)"
 alias cd.="cd .."
 alias cd..="cd .."
