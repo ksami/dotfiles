@@ -18,12 +18,15 @@ html,body {
     margin: 0; padding: 0; overflow: hidden;
     width: 100%; height: 100%;
     font-family: "Droid Sans", "Liberation Sans", "DejaVu Sans", "Segoe UI", Sans; font-size: 10pt;
-    background: #17181A;
+    /*background: #17181A;*/
+    background-image: url("snow.gif");
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
 }
 ul, li { list-style-type: none; margin: 0; padding: 0; }
 
-a, a:link, a:visited { color: #aaabad; text-decoration: none; }
-a:hover, a:active    { color: #cecfd1; }
+a, a:link, a:visited { /*color: #aaabad;*/ color: #28292b; text-decoration: none; }
+a:hover, a:active    { /*color: #cecfd1;*/ color: #17181A;}
 
 .center { position: relative; width: 100%; height: 100%; }
     .center .content {
@@ -34,7 +37,7 @@ a:hover, a:active    { color: #cecfd1; }
 
 #q {
     width: 500px;
-    background: #27282B; color: #cecfd1;
+    /*background: #27282B;*/ background: rgba(255,255,255,0.3); /*color: #cecfd1;*/ color: #17181A;
     border: 0px solid #27282B; border-radius: 0px;
     padding: 8px 8px; font-size: 12pt;
 }
@@ -42,7 +45,7 @@ a:hover, a:active    { color: #cecfd1; }
     #q:hover { border-color: #393A3D; }
 
 #more {
-    background: #27282B; color: #aaabad; border-radius: 0px;
+    /*background: #27282B;*/ background: transparent; /*color: #aaabad;*/ color: #393a3c; border-radius: 0px;
     cursor: pointer; display: inline-block;
     font-size: 18pt; line-height: 26px; /* vertical align "+" button */
     width: 24px; height: 24px;
@@ -59,7 +62,7 @@ a:hover, a:active    { color: #cecfd1; }
 #menu {
     position: fixed; bottom: -64px; left: 0; z-index: 11;
     width: 100%; height: 128px;
-    background: transparent; color: #aaabad; cursor: default;
+    background: transparent; color: #17181A; /*color: #aaabad;*/ cursor: default;
     transition: .2s ease-out;
 }
     #menu:hover            { bottom: 0; }
@@ -71,8 +74,8 @@ a:hover, a:active    { color: #cecfd1; }
     #menu label            { padding: 0; display: inline-block; font-weight: bold; width: 200px; } /* menu title width */
 
     #menu ul li            { float: left; border-radius: 0px; height: 64px; }
-    #menu ul li:hover      { background: #27282B; color: #cecfd1; }
-    #menu ul li:hover > ul { visibility: visible; bottom: 100%; opacity: 1; transition: .2s ease-out; }
+    #menu ul li:hover      { /*background: #27282B;*/ background: rgba(255,255,255,0.3); color: #17181A; /*color: #cecfd1;*/ }
+    #menu ul li:hover > ul { background: rgba(255,255,255,0.3); visibility: visible; bottom: 100%; opacity: 1; transition: .2s ease-out; }
     #menu ul li a          { display: block; white-space: nowrap; padding: 0 10px; }
 
     #menu ul ul            {
@@ -83,7 +86,7 @@ a:hover, a:active    { color: #cecfd1; }
     }
 
     #menu ul ul li         { width: 100%; height: 32px; text-align: left; } /* menu links align */
-    #menu ul ul li:hover   { background: #27282B; }
+    #menu ul ul li:hover   { /*background: #27282B;*/ background: rgba(255,255,255,0.4); }
 
     #menu img {
         width: 16px; height: 16px;
@@ -97,13 +100,14 @@ var $=function(id) { return document.getElementById(id); };
 
 
 var search=[ // Search engines
-    ["",    "https://www.google.co.kr/search?q="],                           // Google (Default)
-    ["!g",  "https://www.google.co.kr/search?q="],                           // Google
-    ["!i",  "https://www.google.co.kr/search?tbm=isch&q="],            // Google Images
-    ["!y",  "https://www.youtube.com/results?search_query="],       // YouTube
-    ["!w",  "http://en.wikipedia.org/w/index.php?search="],         // Wikipedia
-    ["!m",  "http://www.imdb.com/find?q="],                         // IMDb
-    ["!u",  "http://www.urbandictionary.com/define.php?term="],     // Urban Dictionary
+    ["",   "https://www.google.co.kr/search?q="],                                // Google (Default)
+    ["n",  "http://endic.naver.com/search.nhn?sLn=kr&searchOption=all&query="],  // Naver Eng-Kor Dictionary
+    ["t",  "https://translate.google.com/#auto/en/"],                            // Google Translate
+    ["g",  "https://www.google.co.kr/search?q="],                                // Google
+    ["i",  "https://www.google.co.kr/search?tbm=isch&q="],                       // Google Images
+    ["y",  "https://www.youtube.com/results?search_query="],                     // YouTube
+    ["w",  "http://en.wikipedia.org/w/index.php?search="],                       // Wikipedia
+    ["u",  "http://www.urbandictionary.com/define.php?term="],                   // Urban Dictionary
 ];
 
 var menus=[ // Menu Titles ["Title", width(px)],                                                   /* menu width */
@@ -218,16 +222,29 @@ function handleQuery(e,q) { // Handle search query
     var key=e.keyCode || e.which;
 
     if(key==13) { // enter
-        if(q.lastIndexOf("!")!=-1) {
-            var x=q.lastIndexOf("!"),found=false;
+        // if(q.lastIndexOf("!")!=-1) {
+        //     var x=q.lastIndexOf("!"),found=false;
             
+        //     for(var i=0;i<search.length;i++) {
+        //         if(search[i][0]==q.substr(x)) { // Find "!?"
+        //             found=true; window.location=search[i][1]+q.substr(0,x).replace(/&/g,"%26");
+        //         }
+        //     }
+        //     if(!found) { // Invalid "!?", use default
+        //         window.location=ss+q.substr(0,x).replace(/&/g,"%26");
+        //     }
+        // } else { // "!?" where not specified, use default
+        //     window.location=ss+q.replace(/&/g,"%26");
+        // }
+        if(q.charAt(0)==='/' && q.length>3) {
+            var se=q.charAt(1),found=false;
             for(var i=0;i<search.length;i++) {
-                if(search[i][0]==q.substr(x)) { // Find "!?"
-                    found=true; window.location=search[i][1]+q.substr(0,x).replace(/&/g,"%26");
+                if(search[i][0]===se) {  //Find search engine to use
+                    found=true; window.location=search[i][1]+q.substr(3).replace(/&/g,"%26"); break;
                 }
             }
             if(!found) { // Invalid "!?", use default
-                window.location=ss+q.substr(0,x).replace(/&/g,"%26");
+                window.location=ss+q.substr(3).replace(/&/g,"%26");
             }
         } else { // "!?" where not specified, use default
             window.location=ss+q.replace(/&/g,"%26");
@@ -281,12 +298,13 @@ function getFavicon(url) {
         <br /><br />
         <div id="help">
             <ul>
-                <li><b>!g</b> = Search Google (Default)</li>
-                <li><b>!i</b> = Search Google Images</li>
-                <li><b>!y</b> = Search YouTube</li>
-                <li><b>!w</b> = Search Wikipedia</li>
-                <li><b>!m</b> = Search IMDb</li>
-                <li><b>!u</b> = Search Urban Dictionary</li>
+                <li><b>/g</b> = Search Google (Default)</li>
+                <li><b>/n</b> = Search Naver Eng-Kor Dictionary</li>
+                <li><b>/t</b> = Search Google Translate</li>
+                <li><b>/i</b> = Search Google Images</li>
+                <li><b>/y</b> = Search YouTube</li>
+                <li><b>/w</b> = Search Wikipedia</li>
+                <li><b>/u</b> = Search Urban Dictionary</li>
             </ul>
         </div>
     </div>
