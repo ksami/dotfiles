@@ -2,7 +2,14 @@
 	email = ksami.ihide@gmail.com
 	name = ksami
 [push]
-	default = simple
+  default = simple
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [alias]
     st = status
     cm = commit -m
