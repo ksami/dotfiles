@@ -16,7 +16,7 @@ SYMLINK_LIST="
 
 
 # Check for git
-if ! command -v git &>/dev/null; then
+if ! (command -v git &>/dev/null); then
     echo "git not found, please install git and try again"
     echo "Exiting..."
     exit 1
@@ -42,8 +42,8 @@ done
 
 # Set shell to zsh
 if grep -q "zsh" /etc/shells; then
-    if ! echo $SHELL | grep -q "zsh"; then
-        echo "Changing default shell to zsh"
+    if ! (echo $SHELL | grep -q "zsh"); then
+        echo "Changing default shell to zsh (requires sudo password)"
         chsh -s $(grep /zsh$ /etc/shells | tail -1)
     else
         echo "Already using zsh!"
@@ -56,7 +56,7 @@ fi
 
 # Install Vundle
 if command -v vim &>/dev/null; then
-    if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
+    if ! [ -e ~/.vim/bundle/Vundle.vim ]; then
         echo "Installing Vundle"
         git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         vim +PluginInstall +qall
