@@ -23,3 +23,5 @@
     ps = push
     pu = push -u origin
     pl = pull
+    fe = fetch
+    re = rebase
