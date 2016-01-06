@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -97,7 +98,7 @@ set mouse=a
 " Enable syntax highlighting
 syntax on
 
-colorscheme molokai
+colorscheme candy
 set background=dark
 
 
@@ -129,3 +130,9 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+
+" vim-airline config
+let g:airline_theme = 'wombat'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#syntastic#enabled = 1
