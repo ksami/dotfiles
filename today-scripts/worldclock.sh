@@ -13,13 +13,13 @@ BRISTOL_FULL=$(date +"$TIME_FULL")
 
 unset TZ
 
-if [ $SEATTLE_24H -ge 8 -a $SEATTLE_24H -le 17 ]; then
+if [ $SEATTLE_24H -ge 9 -a $SEATTLE_24H -le 17 ]; then
     echo -e "\e[32mSeattle $SEATTLE_FULL"
 else
     echo -e "\e[31mSeattle $SEATTLE_FULL"
 fi
 
-if [ $BRISTOL_24H -ge 8 -a $BRISTOL_24H -le 17 ]; then
+if [ $BRISTOL_24H -ge 9 -a $BRISTOL_24H -le 17 ]; then
     echo -e "\e[32mBristol $BRISTOL_FULL"
 else
     echo -e "\e[31mBristol $BRISTOL_FULL"
