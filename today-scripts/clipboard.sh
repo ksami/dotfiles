@@ -1,1 +1,1 @@
-pbpaste
+pbpaste | head -5
