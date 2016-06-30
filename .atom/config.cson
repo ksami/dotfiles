@@ -1,0 +1,54 @@
+"*":
+  "activate-power-mode":
+    autoToggle: false
+  "atom-beautify":
+    general:
+      _analyticsUserId: "f133170b-c75f-4ed4-882d-f3a52a271945"
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "achievements"
+    ]
+    themes: [
+      "one-dark-ui"
+      "vivid"
+    ]
+  editor:
+    scrollPastEnd: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "d6f55f72-6a1f-2d94-2aca-ab562eb9d8a1"
+  jumpy:
+    useHomingBeaconEffectOnJumps: false
+  linter:
+    errorPanelHeight: 46
+    lintOnFly: false
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "todo-show":
+    findTheseTodos: [
+      "FIXME"
+      "TODO"
+      "CHANGED"
+      "XXX"
+      "IDEA"
+      "HACK"
+      "NOTE"
+      "REVIEW"
+      "BUG"
+    ]
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+    debug: false
+    showStatusBarIcon: true
+  "wakatime-hidden":
+    lastInit: 1467249335
+  welcome:
+    showOnStartup: false
