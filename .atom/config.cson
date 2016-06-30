@@ -1,9 +1,6 @@
 "*":
   "activate-power-mode":
     autoToggle: false
-  "atom-beautify":
-    general:
-      _analyticsUserId: "f133170b-c75f-4ed4-882d-f3a52a271945"
   core:
     automaticallyUpdate: false
     disabledPackages: [
