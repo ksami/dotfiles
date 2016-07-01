@@ -8,9 +8,11 @@
     ]
     themes: [
       "one-dark-ui"
-      "vivid"
+      "dracula-theme"
     ]
   editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 16
     scrollPastEnd: true
     showInvisibles: true
     tabLength: 4
@@ -46,6 +48,6 @@
     debug: false
     showStatusBarIcon: true
   "wakatime-hidden":
-    lastInit: 1467249335
+    lastInit: 1467338696
   welcome:
     showOnStartup: false

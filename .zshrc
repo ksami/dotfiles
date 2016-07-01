@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User specific aliases and functions
 alias rm='rm -i'
+alias rf='rm -rfi'
 alias pls='sudo $(fc -ln -1)'
 alias please='sudo $(fc -ln -1)'
 alias ..='cd ..'
@@ -94,7 +95,6 @@ alias grep="grep --color=auto"
 alias l='ls -lah'
 alias la='ls -lAh'
 alias ll='ls -lh'
-alias ls='ls --color=tty'
 alias lsa='ls -lah'
 alias which-command=whence
 alias du='du -h'
