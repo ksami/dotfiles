@@ -30,9 +30,15 @@ end
 
 
 hs.urlevent.bind("karabiner", function(eventName, params)
-  chrome_click_button_on_tab_with_host("open.spotify.com", ".player-controls__buttons button:nth-child(3)")
-  -- chrome_click_button_on_tab_with_host("soundcloud.com", ".playControl")
-  -- chrome_click_button_on_tab_with_host("youtube.com", ".ytp-play-button")
+  if params["pause"] then
+    chrome_click_button_on_tab_with_host("open.spotify.com", ".player-controls__buttons button:nth-child(3)")
+    chrome_click_button_on_tab_with_host("soundcloud.com", ".playControl")
+    chrome_click_button_on_tab_with_host("youtube.com", ".ytp-play-button")
+  elseif params["next"] then
+    chrome_click_button_on_tab_with_host("open.spotify.com", ".player-controls__buttons button:nth-child(4)")
+    chrome_click_button_on_tab_with_host("soundcloud.com", ".skipControl")
+    chrome_click_button_on_tab_with_host("youtube.com", ".ytp-next-button")
+  end
 end)
 
 
