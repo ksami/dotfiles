@@ -1,7 +1,13 @@
 .dotfiles
 =========
+### Dependencies
+<details>
+  <summary>vim</summary>
+  <p>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</p>
+</details>
 
-###Instructions  
+- - - -
+### Instructions  
 Clone repo  
 `git clone https://github.com/ksami/dotfiles`  
 
